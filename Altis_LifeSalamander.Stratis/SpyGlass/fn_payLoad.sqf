@@ -26,7 +26,6 @@ __CONST__(JJJJ_MMMM___EEEEEEE_SPAWN_VEH,"No");
 __CONST__(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"No");
 
 //Make sure all functions were offloaded to the client..
-if(__GETC__(life_adminlevel) > 0) exitWith {};
 waitUntil {!isNil "SPY_fnc_menuCheck" && !isNil "SPY_fnc_variablecheck" && !isNil "SPY_fnc_cmdMenuCheck"};
 
 //Browse through the CfgPatches and check if any patches not white-listed by the server admin exist. Default configuration allows no extra addons.
