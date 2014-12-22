@@ -310,6 +310,7 @@ class Life_Client_Core
 		class gangInvite {};
 		class gangDisband {};
 		class gangDisbanded {};
+                class groupMarkers {};
 	};
 	
 	class Shops
