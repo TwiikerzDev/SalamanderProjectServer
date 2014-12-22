@@ -147,6 +147,14 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,1,1,0.8)","med"]
 		];
 	};
+        
+        case "I_MRAP_03_F":
+	{
+		_ret = 
+		[
+			["textures\strider_police.jpg","cop"]
+		];
+	};
 	
 	case "B_MRAP_01_F":
 	{

@@ -85,15 +85,90 @@ switch (_shop) do
 	
 	case "cop_car":
 	{
-		_return pushBack
-		["C_Offroad_01_F",5000];
-		_return pushBack
-		["C_SUV_01_F",20000];
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) == 1) then //Cop 1 Recrue
 		{
-			_return pushBack
-			["B_MRAP_01_F",30000];
+			_return set[count _return,
+			["C_Offroad_01_F",5000]];
+			_return set[count _return,
+			["C_Hatchback_01_F",5000]];
 		};
+		
+  
+		if(__GETC__(life_coplevel) == 2) then //Cop 2 Policier
+		{
+		_return set[count _return,
+		["C_Offroad_01_F",5000]];
+		_return set[count _return,
+		["C_Hatchback_01_F",5000]];
+		};
+		
+		if(__GETC__(life_coplevel) == 3) then //Cop 3 Brigadier
+		{
+		_return set[count _return,
+		["C_Offroad_01_F",5000]];
+		_return set[count _return,
+		["C_Hatchback_01_F",5000]];
+		};
+		
+		if(__GETC__(life_coplevel) == 4) then // Cop 4 Major
+		{
+		_return set[count _return,
+		["C_Offroad_01_F",5000]];
+		_return set[count _return,
+		["C_Hatchback_01_F",5000]];
+		_return set[count _return,
+		["C_SUV_01_F",18000]];
+		_return set[count _return,
+		["C_Hatchback_01_sport_F",60000]];
+		};
+  
+  
+  
+		if(__GETC__(life_coplevel) == 5) then // Cop 5 Lieutenant
+		{
+		_return set[count _return,
+		["C_Offroad_01_F",5000]];
+		_return set[count _return,
+		["C_Hatchback_01_F",5000]];
+		_return set[count _return,
+		["C_SUV_01_F",18000]];
+		_return set[count _return,
+		["C_Hatchback_01_sport_F",60000]];
+		_return set[count _return,
+		["B_MRAP_01_F",80000]];
+		}; 
+		
+		if(__GETC__(life_coplevel) == 6) then // Cop 6 Commandant
+		{
+		_return set[count _return,
+		["C_Offroad_01_F",5000]];
+		_return set[count _return,
+		["C_Hatchback_01_F",5000]];
+		_return set[count _return,
+		["C_SUV_01_F",18000]];
+		_return set[count _return,
+		["C_Hatchback_01_sport_F",60000]];
+		_return set[count _return,
+		["B_MRAP_03_F",80000]];
+		}; 
+		
+		if(__GETC__(life_coplevel) == 7) then // Cop 7 Colonel
+		{
+		_return set[count _return,
+		["C_Offroad_01_F",5000]];
+		_return set[count _return,
+		["C_Hatchback_01_F",5000]];
+		_return set[count _return,
+		["C_SUV_01_F",18000]];
+		_return set[count _return,
+		["C_Hatchback_01_sport_F",60000]];
+		_return set[count _return,
+		["B_MRAP_03_F",80000]];
+		_return set[count _return,
+		["I_MRAP_03_F",160000]];
+		}; 
+  
+		
 	};
 	
 	case "civ_air":
