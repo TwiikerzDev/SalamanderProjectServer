@@ -73,7 +73,7 @@ if(playerSide == west) then {
 		_Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
 		if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn2 ctrlEnable true;} else {_Btn2 ctrlEnable false};
 	} else {
-		if(typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kart_01_Red_F","C_Kart_01_Fuel_F","C_Kart_01_Vrana_F"]) then {
+		if(typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kart_01_Red_F","C_Kart_01_Fuel_F","C_Kart_01_Vrana_F","B_Heli_Transport_03_F - Huron","B_Heli_Transport_03_unarmed_F - Huron Black","C_Heli_Light_01_civil_F - M900","O_Heli_Transport_04_F - Taru","O_Heli_Transport_04_ammo_F - Taru Ammo","O_Heli_Transport_04_bench_F - Taru Bench","O_Heli_Transport_04_box_F - Taru Cargo","O_Heli_Transport_04_box_F - Taru Fuel","O_Heli_Transport_04_medevac_F - Taru Medical","O_Heli_Transport_04_repair_F - Taru Repair","O_Heli_Transport_04_covered_F - taru Transport"]) then {
 			_Btn2 ctrlSetText localize "STR_vInAct_GetInKart";
 			_Btn2 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
 			if(count crew _curTarget == 0 && {canMove _curTarget} && {locked _curTarget == 0}) then {_Btn2 ctrlEnable true;} else {_Btn2 ctrlEnable false};
