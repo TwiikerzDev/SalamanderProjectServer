@@ -87,12 +87,22 @@ switch (_shop) do
 	{
 		_return pushBack
 		["C_Offroad_01_F",5000];
-		_return pushBack
-		["C_SUV_01_F",20000];
-		if(__GETC__(life_coplevel) > 2) then
+                ["C_Hatchback_01_F",4000];
+                
+		if(__GETC__(life_coplevel) > 3) then
 		{
 			_return pushBack
-			["B_MRAP_01_F",30000];
+			["C_SUV_01_F",14000];
+                        
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_return pushBack
+			["I_MRAP_03_F",140000];
+                        
+                if(__GETC__(life_coplevel) > 5) then
+		{
+			_return pushBack
+			["C_Hatchback_01_sport_F",40000];
 		};
 	};
 	
